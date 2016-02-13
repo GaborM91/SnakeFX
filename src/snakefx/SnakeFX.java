@@ -40,7 +40,7 @@ public class SnakeFX extends Application {
     Random r= new Random();
     Integer randomx,randomy;
     double predx=485,predy=485;
-    String musicFile = "beep.wav";     // For example
+    String musicFile = "beep.wav";     
 
 Media sound ;
 MediaPlayer mediaPlayer ;
@@ -149,12 +149,7 @@ MediaPlayer mediaPlayer ;
             }
             if(p.get(0).y==-35){
                 p.get(0).y=965;
-            }
-            /*if(frames%fpsDivider==0){
-                isDirectionChanged=false;
-            }*/
-            
-            // erintesek
+            }            
             
             gc.clearRect(0, 0, 1000, 1000);
             for(int i=p.size()-1;i>=0;--i){
@@ -203,8 +198,7 @@ MediaPlayer mediaPlayer ;
             }
             
             
-            /*gc.strokeRoundRect(x, y, 30, 30, 10, 10);
-            gc.strokeRoundRect(x+40, y, 30, 30, 10, 10);*/
+            
             
         }
         @Override
