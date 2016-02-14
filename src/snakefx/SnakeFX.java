@@ -173,6 +173,9 @@ MediaPlayer mediaPlayer ;
                     mediaPlayer.play();
                     
                 }
+            if(frames%fpsDivider==0){
+                frames=0;
+            }
             frames++;
             if(catched==true){
                 
