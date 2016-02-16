@@ -34,7 +34,7 @@ public class SnakeFX extends Application {
     GraphicsContext gc;
     boolean up,down,left,right,isDirectionChanged,catched,match;
     double x=0,y=0;
-    final int fpsDivider=5;
+    final int fpsDivider=3;
     int frames=0;
     ArrayList<Positions> p= new ArrayList<>();
     Random r= new Random();
@@ -50,7 +50,7 @@ MediaPlayer mediaPlayer ;
     public void start(Stage primaryStage) {
         sound = new Media(new File(musicFile).toURI().toString());
         mediaPlayer = new MediaPlayer(sound);
-       primaryStage.setTitle("Drawing Operations Test");
+       primaryStage.setTitle("SnakeFX");
         Group root = new Group();
         Canvas canvas = new Canvas(1000, 1000);
         gc = canvas.getGraphicsContext2D();
