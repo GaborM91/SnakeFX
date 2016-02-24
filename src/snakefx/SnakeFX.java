@@ -50,7 +50,7 @@ MediaPlayer mediaPlayer ;
     public void start(Stage primaryStage) {
         sound = new Media(new File(musicFile).toURI().toString());
         mediaPlayer = new MediaPlayer(sound);
-       primaryStage.setTitle("SnakeFX");
+        primaryStage.setTitle("SnakeFX");
         Group root = new Group();
         Canvas canvas = new Canvas(1000, 1000);
         gc = canvas.getGraphicsContext2D();
